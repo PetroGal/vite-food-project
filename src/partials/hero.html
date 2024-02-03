@@ -6,37 +6,54 @@
         doorstep, no matter where you are. Order now and enjoy a hassle-free and delicious meal
         from the comfort of your own home.
       </p>
-
-      <picture>
-      
-      
-        <source
+      <div class="hero-picture">
+       <picture>
+       <source
           media="(min-width: 1280px)"
-          srcset="./images/gallery/img-1_lg.jpg 1x, ./images/gallery/img-1_lg@2x.jpg 2x"
-          type="image/jpg"
+          srcset="./img/hero/hero-salad.png 1x, ../img/hero/hero-salad-max.png 2x"
+          type="image/png"
         />
-        <!-- Tablet screen -->
-      
-        <source
-          media="(min-width: 768px)"
-          srcset="./images/gallery/img-1_md.jpg 1x, ./images/gallery/img-1_md@2x.jpg 2x"
-          type="image/jpg"
-        />
-        <!-- Mobile screen -->
-      
-     
-        <img
-          class="card-img"
-          src="./images/gallery/img-1_lg.jpg"
-          alt="Ноутбук"
-          width="450"
-          height="294"
-          loading="lazy"
+        <img 
+          class="hero-kart-desktop"
+          src="./img/hero/hero-salad.png"
+          alt="Salad"
+          width="520"
+          height="520"
         />
       </picture>
-
-
-
+      <source
+         media="(min-width: 768px)"
+          srcset="./img/hero/hero-tab1x.png 1x, ./img/hero/hero-tab2x.png 2x"
+          type="image/png"
+        />
+        <img 
+          class="hero-kart"
+          src="/img/hero/hero-tab1x.png"
+          alt="Salad"
+          width="320"
+          height="320"
+        />
+      </picture>
+      <div>
+      <ul class="hero-list">
+        <li class="hero-item"> 
+          <a href="../index.html" class="link">
+            <svg class="hero-icon-l" width="18" height="18">
+        <use href="./img/hero/hero-icons.svg#icon-vector-l"></use>
+      </svg> 
+    </a>
+        </li>
+        <li class="hero-item"> 
+          <a href="../index.html" class="link">
+            <svg class="hero-icon-r" width="18" height="18">
+        <use href="./img/hero/hero-icons.svg#icon-vector-r"></use>
+      </svg>
+    </a> 
+        </li>
+      </ul>
     </div>
+      </div>
+    </div>
+    
     <button class="hero-btn" type="button">Order Now</button>
   </section>

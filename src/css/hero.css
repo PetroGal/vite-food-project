@@ -17,6 +17,9 @@
     line-height: 1.4;
     margin-bottom: 32px;
 }
+.hero-list {
+    display: none;
+}
 .hero-btn {
     color: #2c2c2c;
     font-size: 13px;
@@ -31,10 +34,14 @@
     background-color: #BBF330;
     border: transparent;
 
-    border-radius: 30px;
-    padding: 6px 17px;
     width: 98px;
     height: 32px;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.66,-0.28, 0.18, 0.91);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #FFE450;
 }
 .hero-kart {
     display: none;
@@ -46,6 +53,7 @@
     .hero-wrapper {
         padding-top: 30px;
         padding-bottom: 42px;
+        position: relative;
     }
     .hero-title {
         line-height: 1.2;
@@ -54,9 +62,6 @@
         width: 481px;
     }
     .hero-group {
-        position: relative;
-        display: flex;
-        gap: 54px;
     }
     .hero-text {
         color: var(--Black, #2C2C2C);
@@ -66,18 +71,42 @@
         margin-bottom: 49px;
         width: 336px;
     }
+    .hero-picture {        
+    }
     .hero-kart {
         display: block;
         position: absolute;
-        top: -50%;
+        bottom: 0;
         right: 0;
+        border-radius: 291px;
+        border: 13px solid #FFE550;
+         
+    }
+    .hero-list {
+    }
+    .hero-item {
+        background-color: #D9D9D9;
+        border-radius: 4px;
+        width: 25px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link {  
+    }
+    .hero-icon-l {
+    }
+    .hero-icon-r {
+    }
+     .hero-kart-desktop {
+        display: none;
     }
 }
 @media only screen and (min-width: 1280px) {
     .hero-wrapper {
-        padding-top: 168px;
+        padding-top: 159px;
         padding-bottom: 0;
-        position: relative;
     }
     .hero-title {
         font-size: 48px;
@@ -87,20 +116,24 @@
         margin-bottom: 40px;
     }
     .hero-group {
-        gap: 100px;
     }
     .hero-kart {
         display: none;
     }
     .hero-kart-desktop {
         position: absolute;
-        top: -200%;
+        bottom: 0;
         right: 0;
         display: block;
         border-radius: 291px;
-        border: 27px solid #FFE550;       
+        border: 26px solid #FFE550; 
+        width: 580px;
+        height: 580px;
+    }
+    .hero-list {
+        display: none;
     }
     .hero-btn {
-        margin-bottom: 164px;
+        margin-bottom: 170px;
     }
     }
