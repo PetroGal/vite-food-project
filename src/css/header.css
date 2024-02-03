@@ -85,6 +85,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
 }
 
 .is-open {
@@ -108,7 +109,7 @@
   justify-content: center;
 }
 .mob-menu-nav {
-  margin-top: 10px;
+  margin-top: 6px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -119,11 +120,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--black);
 }
 
 .mob-menu-nav > li:first-child a {
